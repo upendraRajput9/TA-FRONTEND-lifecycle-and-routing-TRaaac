@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* custom */
+body{
+    font-family: 'Rajdhani', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* variables */
+.root{
+    --Primary:rgb(89,191,194);
+    --Secondary: white;
+    --text-dark:rgb(40,62,125);
+    --bg-light:rgb(213,229,229);
+    --text-light:rgb(110,113,120);
+}
+/* general classes */
+.center{
+    text-align: center;
+}
+
+.margin{
+    margin: 1rem;
+}
+
+.padding{
+    padding: 1rem;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.btn{
+    display: inline-block;
+    padding: 16px;
+    color: var(---Secondary);
+    background-color: var(---Primary);
+}
+/* flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.justify-end{
+    justify-content: end;
+}
+
+.display-flex{
+    display: flex;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.dark-color{
+    background-color: rgb(36,37,23);
+    width: 100%;
+    height: 50vh;
+}
+.light-color{
+    background-color: rgb(233,248,228);
+    width: 100%;
+    height: 50vh;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+}
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+i{
+    padding: 0 6px;
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+figure{
+    border: 0.3px solid rgb(68, 68, 68);
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    top: 15%;
+    background-color: white;
+}
+.profile{
+   background-color:rgb(230,233,255);
+    width: 100%;
+    height: 37%;
+}
+.button-div{
+    width: 100%;
+    height: 63%;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+
+}
+p{
+    font-size: 1.2rem;
+    color: rgb(94,113,141);
+    padding-bottom: 1rem;
+}
+h1{
+    font-size: 1.8rem;
+   color: rgb(13,46,78);
+   font-weight: 800;
+}
+nav{
+   padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav i{
+font-size: 2rem;
+color: rgb(94,113,141);
+}
+nav i:hover{
+    color: rgb(83,152,232);
+}
+button{
+    background-color: rgb(91,161,218);
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    border: 1px solid rgb(97, 97, 97);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 3px;
+    margin-top: 3px;
+    padding: 2px 9px;
+}
+button:hover{
+    background-color: rgb(22, 81, 129);
+}
